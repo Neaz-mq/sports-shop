@@ -27,7 +27,7 @@ const Banner = () => {
       {images.map((image, index) => (
         <div
           key={index}
-          className={`absolute top-0 left-0 w-full h-full transition-transform transform ${
+          className={`absolute top-0 left-0 w-full  h-full transition-transform transform ${
             index === currentIndex ? 'opacity-100' : 'opacity-0 scale-95'
           }`}
         >
