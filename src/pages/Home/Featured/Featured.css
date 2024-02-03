@@ -1,0 +1,13 @@
+.featured-item{
+    position: relative; /* Ensure proper stacking of elements */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../../../assets/backgorund.jpg');
+    background-position: center;
+    background-size: cover; /* Optional: Ensure the image covers the entire container */
+    background-repeat: no-repeat; /* Optional: Prevent the image from repeating */
+     
+}
+
+.justify-start {
+    text-align: justify;
+    text-align-last: justify;
+}
