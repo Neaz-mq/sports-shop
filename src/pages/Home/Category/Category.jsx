@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 
-import '../Category/styles.css';
+import '../Category/category.css';
 
 import slide1 from '../../../assets/cricket.png';
 import slide2 from '../../../assets/football.png';
