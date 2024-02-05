@@ -17,8 +17,9 @@ const NavBar = () => {
 
     const navOptions = <>
         <li className="hover:bg-red-600 rounded-lg font-semibold text-red-600 lg:text-white"><Link to="/">Home</Link></li>
-        <li  className="hover:bg-red-600 rounded-lg font-semibold text-red-600 lg:text-white"><Link to="/menu">Our Menu</Link></li>
+        <li  className="hover:bg-red-600 rounded-lg font-semibold text-red-600 lg:text-white"><Link to="/item">Our Item</Link></li>
         <li  className="hover:bg-red-600 rounded-lg font-semibold text-red-600 lg:text-white"><Link to="/order/salad">Order Food</Link></li>
+        
         
        
      
