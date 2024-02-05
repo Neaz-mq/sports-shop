@@ -36,6 +36,9 @@ const PopularItem = () => {
                     ></SportsItem>)
                 }
             </div>
+            <div className="text-center mt-10">
+            <button className="btn btn-outline btn-error">View Full Menu</button>
+            </div>
         </section>
     );
 };
