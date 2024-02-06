@@ -1,20 +1,22 @@
-import { useEffect } from "react";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
-import { useState } from "react";
-
 import SportsItem from "../../Shared/SportsItem/SportsItem";
+import useItem from "../../../hooks/useItem";
+
 
 const PopularItem = () => {
 
-    const [item, setItem] = useState([]);
+    const [item] = useItem();
+    const popular = item.filter(item => item.category === 'popular');
 
-    useEffect( () => {
-        fetch ('item.json')
-        .then(res => res.json())
-        .then(data => {
-            const PopularItems = data.filter(item => item.category === 'popular');
-            setItem(PopularItems)})
-    }, [])
+    // const [item, setItem] = useState([]);
+
+    // useEffect( () => {
+    //     fetch ('item.json')
+    //     .then(res => res.json())
+    //     .then(data => {
+    //         const PopularItems = data.filter(item => item.category === 'popular');
+    //         setItem(PopularItems)})
+    // }, [])
 
     
     return (
@@ -28,7 +30,7 @@ const PopularItem = () => {
 
             <div className="grid md:grid-cols-2 gap-6 pt-6">
                 {
-                    item.map(item => <SportsItem
+                    popular.map(item => <SportsItem
                     
                         key={item._id}
                         item={item}
