@@ -7,17 +7,6 @@ const PopularItem = () => {
 
     const [item] = useItem();
     const popular = item.filter(item => item.category === 'popular');
-
-    // const [item, setItem] = useState([]);
-
-    // useEffect( () => {
-    //     fetch ('item.json')
-    //     .then(res => res.json())
-    //     .then(data => {
-    //         const PopularItems = data.filter(item => item.category === 'popular');
-    //         setItem(PopularItems)})
-    // }, [])
-
     
     return (
         <section className="mb-12">
