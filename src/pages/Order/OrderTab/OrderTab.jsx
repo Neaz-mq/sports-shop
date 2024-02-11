@@ -13,7 +13,7 @@ const OrderTab = ({ items }) => {
         <ItemCard key={item._id} item={item} />
       ))}
       {!showAll && items.length > 4 && (
-        <div className='flex justify-center items-center mt-4 ml-64 -mr-52'>
+        <div className='flex justify-center items-center mt-4 lg:ml-64 lg:-mr-52'>
           <button
             className='btn btn-secondary'
             onClick={() => setShowAll(true)}
@@ -23,7 +23,7 @@ const OrderTab = ({ items }) => {
         </div>
       )}
       {showAll && (
-        <div className='flex justify-center items-center mt-4 ml-64 -mr-52'>
+        <div className='flex justify-center items-center mt-4 lg:ml-64 lg:-mr-52'>
           <button
             className='btn btn-secondary'
             onClick={() => setShowAll(false)}
