@@ -5,6 +5,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import useItem from '../../../hooks/useItem';
 import ItemCard from '../../../components/ItemCard/ItemCard';
+import OrderTab from '../OrderTab/OrderTab';
 
 const Order = () => {
   const [tabIndex, setTabIndex] = useState(0);
@@ -20,47 +21,54 @@ const Order = () => {
     <div>
       <Cover img={orderCover} title={'Order Item'}></Cover>
 
-      <div className="flex justify-center mt-8">
-        <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
-        <TabList className="flex bg-gray-200 p-4">
-  <Tab className="py-2 px-4 cursor-pointer text-gray-600 hover:text-blue-500 focus:outline-none border-b-2 border-transparent hover:border-blue-500">
+      <div className="flex justify-center mt-8 ">
+        <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}> 
+
+        
+     <TabList className="flex bg-gray-200 p-4 gap-6 ml-4 mb-8 mr-4" >
+     
+  <Tab className="py-2 px-4 ml-56 cursor-pointer text-gray-600 hover:text-blue-500 focus:outline-none border-b-2 border-transparent hover:border-blue-500">
     Cricket
   </Tab>
-  <div className="ml-4"></div> {/* Adjust the margin as needed */}
+ 
+  
+ 
   <Tab className="py-2 px-4 cursor-pointer text-gray-600 hover:text-blue-500 focus:outline-none border-b-2 border-transparent hover:border-blue-500">
     Football
   </Tab>
-  <div className="ml-4"></div> {/* Adjust the margin as needed */}
+ 
+
+ 
   <Tab className="py-2 px-4 cursor-pointer text-gray-600 hover:text-blue-500 focus:outline-none border-b-2 border-transparent hover:border-blue-500">
     Tennis
   </Tab>
-  <div className="ml-4"></div> {/* Adjust the margin as needed */}
+ 
+ 
   <Tab className="py-2 px-4 cursor-pointer text-gray-600 hover:text-blue-500 focus:outline-none border-b-2 border-transparent hover:border-blue-500">
     Volleyball
   </Tab>
+ 
 </TabList>
 
 
-          <div className="p-4">
+          <div className="p-4 mb-10">
             <TabPanel>
-              {cricket.map((item) => (
-                <ItemCard key={item._id} item={item} />
-              ))}
+             <OrderTab items={cricket}></OrderTab>
             </TabPanel>
             <TabPanel>
-              {football.map((item) => (
-                <ItemCard key={item._id} item={item} />
-              ))}
+            
+            <OrderTab items={football}></OrderTab>
+              
             </TabPanel>
             <TabPanel>
-              {tennis.map((item) => (
-                <ItemCard key={item._id} item={item} />
-              ))}
+           
+            <OrderTab items={tennis}></OrderTab>
+             
             </TabPanel>
             <TabPanel>
-              {volleyball.map((item) => (
-                <ItemCard key={item._id} item={item} />
-              ))}
+           
+            <OrderTab items={volleyball}></OrderTab>
+              
             </TabPanel>
           </div>
         </Tabs>
