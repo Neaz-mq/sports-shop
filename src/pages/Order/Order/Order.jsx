@@ -33,7 +33,7 @@ const Order = () => {
         <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
 
 
-          <TabList className="flex bg-gray-200 p-4 gap-6 lg:ml-4 mb-8 lg:mr-4" >
+          <TabList className="flex bg-gray-200 p-4 gap-6 lg:ml-2 mb-8 lg:mr-2" >
 
             <Tab className="py-2 px-4 lg:ml-52 cursor-pointer text-gray-600 hover:text-blue-500 focus:outline-none border-b-2 border-transparent hover:border-blue-500">
               Cricket
