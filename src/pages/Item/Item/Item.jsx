@@ -33,15 +33,11 @@ const Item = () => {
             {/* Offered Items */}
             <ItemCategory items={offered}></ItemCategory>
             {/* cricket items */}
-            <ItemCategory
-              items={cricket}
-              title={"Cricket"}
-              img={cricketImg}
-            ></ItemCategory>
 
-            <ItemCategory  items={football} title={"Football"} img={footballImg}></ItemCategory>
-            <ItemCategory  items={tennis} title={"Tennis"} img={tennisImg}></ItemCategory>
-            <ItemCategory  items={volleyball} title={"Volleyball"} img={volleyballImg}></ItemCategory>
+            <ItemCategory items={cricket}title={"cricket"}img={cricketImg}></ItemCategory>
+            <ItemCategory  items={football} title={"football"} img={footballImg}></ItemCategory>
+            <ItemCategory  items={tennis} title={"tennis"} img={tennisImg}></ItemCategory>
+            <ItemCategory  items={volleyball} title={"volleyball"} img={volleyballImg}></ItemCategory>
         </div>
     );
 };

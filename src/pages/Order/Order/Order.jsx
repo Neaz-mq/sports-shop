@@ -6,11 +6,15 @@ import 'react-tabs/style/react-tabs.css';
 import useItem from '../../../hooks/useItem';
 import ItemCard from '../../../components/ItemCard/ItemCard';
 import OrderTab from '../OrderTab/OrderTab';
+import { useParams } from 'react-router-dom';
 
 const Order = () => {
   const [tabIndex, setTabIndex] = useState(0);
   const [item] = useItem();
 
+  const {category} = useParams();
+
+  console.log(category);
   const cricket = item.filter((item) => item.category === 'cricket');
   const football = item.filter((item) => item.category === 'football');
   const tennis = item.filter((item) => item.category === 'tennis');
