@@ -7,14 +7,16 @@ import useItem from '../../../hooks/useItem';
 import ItemCard from '../../../components/ItemCard/ItemCard';
 import OrderTab from '../OrderTab/OrderTab';
 import { useParams } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const Order = () => {
-  const [tabIndex, setTabIndex] = useState(0);
+
+  const categories = ['cricket', 'football', 'tennis', 'volleyball'];
+  const {category} = useParams();
+  const initialIndex = categories.indexOf(category);
+  const [tabIndex, setTabIndex] = useState(initialIndex);
   const [item] = useItem();
 
-  const {category} = useParams();
-
-  console.log(category);
   const cricket = item.filter((item) => item.category === 'cricket');
   const football = item.filter((item) => item.category === 'football');
   const tennis = item.filter((item) => item.category === 'tennis');
@@ -22,6 +24,9 @@ const Order = () => {
 
   return (
     <div>
+      <Helmet>
+                <title>Sports shop | Order Item</title>
+            </Helmet>
       <Cover img={orderCover} title={'Order Item'}></Cover>
 
       <div className="flex justify-center mt-8 ">
