@@ -2,20 +2,30 @@ import { Link } from "react-router-dom";
 
 
 const Login = () => {
+
+    const handleLogin = event => {
+        event.preventDefault();
+        const form = event.target;
+        const email = form.email.value;
+        const password = form.password.value;
+        console.log(email, password);
+    }
+
+
     return (
-        <div className="hero min-h-screen bg-base-200">
+        <div className="hero lg:min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row">
-            <div className="w-1/2 mr-16">
+            <div className="lg:w-1/2 lg:mr-16">
             <iframe
                         src="https://lottie.host/embed/b4378f10-d8c8-4c68-a6be-5a1aaf9f1c07/eGdhMIKpL9.json"
-                        width="400" // Set the width as per your requirement
-                        height="400" // Set the height as per your requirement
+                        width="393" 
+                        height="400" 
                     ></iframe>
             </div>
             <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                 <div className="card-body">
                     <h1 className="text-3xl text-center font-bold">Login</h1>
-                    <form>
+                    <form onSubmit={handleLogin}>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Email</span>
