@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+import { Helmet } from "react-helmet-async";
 
 
 const Login = () => {
@@ -24,6 +25,10 @@ const Login = () => {
 
 
     return (
+      <>
+        <Helmet>
+                <title>Sports shop | Login</title>
+            </Helmet>
         <div className="hero lg:min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row">
             <div className="lg:w-1/2 lg:mr-16">
@@ -61,6 +66,8 @@ const Login = () => {
             </div>
         </div>
     </div>
+      
+      </>
     );
 };
 
