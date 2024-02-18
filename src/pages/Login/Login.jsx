@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { Helmet } from "react-helmet-async";
 import { ToastContainer, toast } from 'react-toastify';
@@ -9,6 +9,10 @@ import { ToastContainer, toast } from 'react-toastify';
 const Login = () => {
 
     const {signIn} = useContext(AuthContext);
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const from = location.state?.from?.pathname || "/";
 
 
 
@@ -25,14 +29,17 @@ const Login = () => {
              // Display a toast when login is successful
              toast.success("Login successful!", {
                 position: "top-center",
-                autoClose: 5000,
+                autoClose: 1000,
                 hideProgressBar: false,
                 closeOnClick: true,
                 pauseOnHover: true,
                 draggable: true,
                 progress: undefined,
+                onClose: () => navigate(from, { replace: true }),
             });
+            
         })
+        
         .catch((error) => {
             // Handle login failure and display an error toast if needed
             toast.error("Login failed. Please check your credentials.", {
@@ -44,7 +51,9 @@ const Login = () => {
                 draggable: true,
                 progress: undefined,
             });
+           
         });
+       
 };
 
     return (
