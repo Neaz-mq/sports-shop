@@ -1,11 +1,21 @@
 
 import { Link } from "react-router-dom";
 
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { AuthContext } from "../../../providers/AuthProvider";
 
 
 const NavBar = () => {
     
+    const {user, logOut} = useContext(AuthContext);
+
+    const handleLogOut = () => {
+        logOut()
+        .then(() => {
+
+        })
+        .catch(error => console.log(error));
+    }
     
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -19,9 +29,17 @@ const NavBar = () => {
         <li className="hover:bg-red-600 rounded-lg font-semibold text-red-600 lg:text-white"><Link to="/">Home</Link></li>
         <li  className="hover:bg-red-600 rounded-lg font-semibold text-red-600 lg:text-white"><Link to="/item">Our Item</Link></li>
         <li  className="hover:bg-red-600 rounded-lg font-semibold text-red-600 lg:text-white"><Link to="/order/cricket">Order Item</Link></li>
-        <li  className="hover:bg-red-600 rounded-lg font-semibold text-red-600 lg:text-white"><Link to="/login">Login</Link></li>
         
-       
+        
+       {
+          user ? <>
+          
+          <button onClick={handleLogOut} className="btn btn-outline btn-error lg:-mt-2 lg:ml-5 mt-7 ">LogOut</button>
+          
+          </> : <>
+          <li  className="hover:bg-red-600 rounded-lg font-semibold text-red-600 lg:text-white"><Link to="/login">Login</Link></li>
+          </>
+       }
      
         
     </>
