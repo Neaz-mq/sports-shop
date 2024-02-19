@@ -33,7 +33,7 @@ const NavBar = () => {
         
        {
           user ? <>
-          
+           <span className="font-bold text-xl text-yellow-400 ml-4 lg:ml-0  mt-2">{user?.displayName}</span>
           <button onClick={handleLogOut} className="btn btn-outline btn-error lg:-mt-2 lg:ml-5 mt-7 ">LogOut</button>
           
           </> : <>
