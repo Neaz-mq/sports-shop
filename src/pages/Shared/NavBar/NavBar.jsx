@@ -1,9 +1,7 @@
-
 import { Link } from "react-router-dom";
-
 import { useContext, useState } from "react";
 import { AuthContext } from "../../../providers/AuthProvider";
-
+import { FaShoppingCart } from 'react-icons/fa';
 
 const NavBar = () => {
     
@@ -30,6 +28,15 @@ const NavBar = () => {
         <li  className="hover:bg-red-600 rounded-lg font-semibold text-red-600 lg:text-white"><Link to="/item">Our Item</Link></li>
         <li  className="hover:bg-red-600 rounded-lg font-semibold text-red-600 lg:text-white"><Link to="/order/cricket">Order Item</Link></li>
         <li  className="hover:bg-red-600 rounded-lg font-semibold text-red-600 lg:text-white"><Link to="/secret">Secret</Link></li>
+
+        <li>
+                <Link to="/">
+                    <button className="btn gap-2 -mt-3">
+                        <FaShoppingCart className="mr-4"></FaShoppingCart>
+                        <div className="badge badge-secondary">+0</div>
+                    </button>
+                </Link>
+            </li>
         
        {
           user ? <>
