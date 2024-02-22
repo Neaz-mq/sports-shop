@@ -1,4 +1,4 @@
-import { FaHome, FaShoppingCart } from "react-icons/fa";
+import { FaHome, FaSearch, FaShoppingCart } from "react-icons/fa";
 import { NavLink, Outlet } from "react-router-dom";
 
 
@@ -17,6 +17,11 @@ const Dashboard = () => {
                         <NavLink to="/">
                             <FaHome></FaHome>
                             Home</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/order/cricket">
+                            <FaSearch></FaSearch>
+                            Items</NavLink>
                     </li>
                </ul>
 
