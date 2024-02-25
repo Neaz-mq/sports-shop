@@ -4,33 +4,44 @@ import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
+import useAxiosPublic from "../../hooks/useAxiosPublic";
 
 
 const SignUp = () => {
+    const axiosPublic = useAxiosPublic();
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const {createUser, updateUserProfile} = useContext(AuthContext);
     const navigate = useNavigate();
 
     const onSubmit = (data) => {
-        console.log(data);
+      
         createUser(data.email, data.password)
         .then(result => {
             const loggedUser = result.user;
             console.log(loggedUser);
             updateUserProfile(data.name, data.photoURL)
             .then(() => {
-                console.log('User Profile Info Updated');
-                reset();
-                toast.success("User created successfully!", {
-                    position: "top-center",
-                    autoClose: 1000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                    onClose: () =>  navigate('/')
-                });
+                const userInfo = {
+                    name: data.name,
+                    email: data.email,
+                }
+                axiosPublic.post('/users', userInfo)
+                .then(res => {
+                    if(res.data.insertedId){
+                        reset();
+                        toast.success("User created successfully!", {
+                            position: "top-center",
+                            autoClose: 1000,
+                            hideProgressBar: false,
+                            closeOnClick: true,
+                            pauseOnHover: true,
+                            draggable: true,
+                            progress: undefined,
+                            onClose: () =>  navigate('/')
+                        });
+                    }
+                })
+                
 
             })
             .catch((error) => {
