@@ -3,7 +3,9 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { Helmet } from "react-helmet-async";
 import { ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css';
+import SocialLogin from "../../components/SocialLogin/SocialLogin";
+
 
 
 const Login = () => {
@@ -93,6 +95,10 @@ const Login = () => {
                         <div className="form-control mt-6">
                             <input className="btn btn-primary" type="submit" value="Login" />
                         </div>
+                        {/* Google login button */}
+                   
+                    <SocialLogin></SocialLogin>
+                  
                     </form>
                     <p className='my-4 text-center'>New Here? Please <Link className='text-orange-600 font-bold' to="/signup">Sign Up</Link> </p>
                 </div>
