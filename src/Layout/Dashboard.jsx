@@ -10,7 +10,7 @@ const Dashboard = () => {
     return (
         <div className="flex">
             {/* dashboard side bar */}
-            <div className="w-64 min-h-screen bg-green-600" >
+            <div className={`w-64 min-h-screen ${isAdmin ? 'bg-red-500' : 'bg-green-600'}`}>
                 <ul className="menu p-4 text-white text-lg font-bold">
                     {
                         isAdmin ? <>
