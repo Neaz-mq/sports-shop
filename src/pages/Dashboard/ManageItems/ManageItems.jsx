@@ -3,10 +3,13 @@ import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import { FaEdit, FaTrashAlt } from "react-icons/fa";
 import useItem from "../../../hooks/useItem";
 import { useState } from "react";
+import Swal from "sweetalert2";
+import useAxiosSecure from "../../../hooks/useAxiosSecure";
 
 
 const ManageItems = () => {
-    const [item] = useItem();
+    const [item, , refetch] = useItem();
+    const axiosSecure = useAxiosSecure();
     const [search, setSearch] = useState('');
 
      //pagination
@@ -24,6 +27,36 @@ const ManageItems = () => {
      const paginate = (pageNumber) => setCurrentPage(pageNumber);
    
      //end
+
+     const handleDeleteItem = (item) => {
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+        }).then(async (result) => {
+            if (result.isConfirmed) {
+                const res = await axiosSecure.delete(`/menu/${item._id}`);
+                // console.log(res.data);
+                if (res.data.deletedCount > 0) {
+                    // refetch to update the ui
+                    refetch();
+                    Swal.fire({
+                        position: "top-end",
+                        icon: "success",
+                        title: `${item.name} has been deleted`,
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                }
+
+
+            }
+        });
+    }
 
      const handleSearch = e => {
         e.preventDefault();
@@ -83,7 +116,7 @@ const ManageItems = () => {
                         </td>
                         <td>
                             <button
-                               
+                                 onClick={() => handleDeleteItem(item)}
                                 className="btn btn-ghost btn-lg">
                                 <FaTrashAlt className="text-red-600"></FaTrashAlt>
                             </button>
