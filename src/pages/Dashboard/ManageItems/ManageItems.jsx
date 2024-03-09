@@ -39,8 +39,8 @@ const ManageItems = () => {
             confirmButtonText: "Yes, delete it!"
         }).then(async (result) => {
             if (result.isConfirmed) {
-                const res = await axiosSecure.delete(`/menu/${item._id}`);
-                // console.log(res.data);
+                const res = await axiosSecure.delete(`/item/${item._id}`);
+                //  console.log(res.data);
                 if (res.data.deletedCount > 0) {
                     // refetch to update the ui
                     refetch();
@@ -106,7 +106,7 @@ const ManageItems = () => {
                             </div>
                         </td>
                         <td>{item.name}</td>
-                        <td>${item.price}</td>
+                        <td>৳ {item.price}</td>
                         <td>
                             <Link to={`/dashboard/updateItem/${item._id}`}>
                                 <button className="btn btn-ghost btn-lg bg-orange-500">
