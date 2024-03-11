@@ -1,6 +1,6 @@
 import React from 'react';
 
-const sportsItem = ({item}) => {
+const sportsitem = ({item}) => {
     const {name, description, image, price} = item;
     return (
         <div className='flex space-x-4'>
@@ -14,4 +14,4 @@ const sportsItem = ({item}) => {
     );
 };
 
-export default sportsItem;
+export default sportsitem;

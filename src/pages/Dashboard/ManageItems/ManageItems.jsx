@@ -1,26 +1,26 @@
 import { Link } from "react-router-dom";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import { FaEdit, FaTrashAlt } from "react-icons/fa";
-import useItem from "../../../hooks/useItem";
+import useitem from "../../../hooks/useItem";
 import { useState } from "react";
 import Swal from "sweetalert2";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
 
 
-const ManageItems = () => {
-    const [item, , refetch] = useItem();
+const Manageitems = () => {
+    const [item, , refetch] = useitem();
     const axiosSecure = useAxiosSecure();
     const [search, setSearch] = useState('');
 
      //pagination
-     const ITEMS_PER_PAGE = 10;
+     const itemS_PER_PAGE = 10;
      const [currentPage, setCurrentPage] = useState(1);
  
-     const indexOfFirstItem = (currentPage - 1) * ITEMS_PER_PAGE;
-     const indexOfLastItem = currentPage * ITEMS_PER_PAGE;
+     const indexOfFirstitem = (currentPage - 1) * itemS_PER_PAGE;
+     const indexOfLastitem = currentPage * itemS_PER_PAGE;
      
-     const filteredItems = item.filter(item => item.name.toLowerCase().includes(search.toLowerCase()));
-     const currentItems = filteredItems.slice(indexOfFirstItem, indexOfLastItem);
+     const filtereditems = item.filter(item => item.name.toLowerCase().includes(search.toLowerCase()));
+     const currentitems = filtereditems.slice(indexOfFirstitem, indexOfLastitem);
      
 
  
@@ -28,7 +28,7 @@ const ManageItems = () => {
    
      //end
 
-     const handleDeleteItem = (item) => {
+     const handleDeleteitem = (item) => {
         Swal.fire({
             title: "Are you sure?",
             text: "You won't be able to revert this!",
@@ -66,12 +66,12 @@ const ManageItems = () => {
     }
     return (
         <div>
-             <SectionTitle heading="Manage All Items" subHeading="Hurry up"></SectionTitle> 
+             <SectionTitle heading="Manage All items" subHeading="Hurry up"></SectionTitle> 
              <div>
                 <div className="text-center mb-6">
                     <form onSubmit={handleSearch}>
                         <div className="join">
-                            <input type="text" name="search" id="" className="input input-bordered join-item" placeholder="Item Search" />
+                            <input type="text" name="search" id="" className="input input-bordered join-item" placeholder="item Search" />
                             <button className="btn join-item rounded-r-full" >Search</button>
                         </div>
                     </form>
@@ -85,16 +85,16 @@ const ManageItems = () => {
                                     No.
                                 </th>
                                 <th>Image</th>
-                                <th>Item Name</th>
+                                <th>item Name</th>
                                 <th>Price</th>
                                 <th>Update</th>
                                 <th >Delete</th>
                             </tr>
                         </thead>
                         <tbody>
-                        {currentItems.map((item, index) => (
+                        {currentitems.map((item, index) => (
                     <tr key={item._id}>
-                       <td>{indexOfFirstItem + index + 1}</td>
+                       <td>{indexOfFirstitem + index + 1}</td>
 
                         <td>
                             <div className="flex items-center gap-3">
@@ -108,7 +108,7 @@ const ManageItems = () => {
                         <td>{item.name}</td>
                         <td>৳ {item.price}</td>
                         <td>
-                            <Link to={`/dashboard/updateItem/${item._id}`}>
+                            <Link to={`/dashboard/updateitem/${item._id}`}>
                                 <button className="btn btn-ghost btn-lg bg-orange-500">
                                     <FaEdit className="text-white"></FaEdit>
                                 </button>
@@ -116,7 +116,7 @@ const ManageItems = () => {
                         </td>
                         <td>
                             <button
-                                 onClick={() => handleDeleteItem(item)}
+                                 onClick={() => handleDeleteitem(item)}
                                 className="btn btn-ghost btn-lg">
                                 <FaTrashAlt className="text-red-600"></FaTrashAlt>
                             </button>
@@ -130,7 +130,7 @@ const ManageItems = () => {
                     </table>
 
                     <div className="pagination mt-8 flex justify-center">
-    {Array.from({ length: Math.ceil(filteredItems.length / ITEMS_PER_PAGE) }, (_, i) => (
+    {Array.from({ length: Math.ceil(filtereditems.length / itemS_PER_PAGE) }, (_, i) => (
         <button
             key={i + 1}
             onClick={() => paginate(i + 1)}
@@ -151,4 +151,4 @@ const ManageItems = () => {
     );
 };
 
-export default ManageItems;
+export default Manageitems;

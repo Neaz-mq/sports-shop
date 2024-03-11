@@ -1,6 +1,6 @@
 // Banner.jsx
 
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import 'tailwindcss/tailwind.css'; // Import Tailwind CSS
 
 const Banner = () => {

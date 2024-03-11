@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import ItemCard from '../../../components/ItemCard/ItemCard';
 
 const OrderTab = ({ items }) => {

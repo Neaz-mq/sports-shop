@@ -36,7 +36,7 @@ const Cart = () => {
     return (
         <div className='lg:ml-10'>
             <div className="flex justify-evenly lg:mt-4 mb-12 lg:-ml-36 ">
-                <h2 className="text-xl lg:text-4xl ">Items: {cart.length}</h2>
+                <h2 className="text-xl lg:text-4xl ">items: {cart.length}</h2>
                 <h2 className="text-xl lg:text-4xl">Total Price: {totalPrice} BDT</h2>
                 <button disabled className="btn btn-primary">Pay</button>
             </div>

@@ -1,245 +1,245 @@
 [
     {
-        "_id": "9oiuytws9873",
+        "_id": "012c155b2c4774f05c36e964",
         "name": "Bat",
-        "description": "A cricket bat is a specialised piece of equipment used by batters in the sport of cricket.",
+        "description": "A cricket bat is a specialised piece.",
         "image": "https://i.ibb.co/Nr3cPXJ/DOOM.jpg",
         "category": "cricket",
         "price": 990
     },
     {
-        "_id": "9oiuytws9879",
+        "_id": "022c155b2c4774f05c36e785",
         "name": "Bat",
-        "description": "A cricket bat is a specialised piece of equipment used by batters in the sport of cricket.",
+        "description": "A cricket bat is a specialised piece.",
         "image": "https://i.ibb.co/pv81TLG/DSC.jpg",
         "category": "popular",
         "price": 650
     },
    
     {
-        "_id": "9oiuytws987e",
+        "_id": "032c155b2c4774f05c36e398",
         "name": "Bat",
-        "description": "A cricket bat is a specialised piece of equipment used by batters in the sport of cricket.",
+        "description": "A cricket bat is a specialised piece.",
         "image": " https://i.ibb.co/TmTnQSr/MALIK.png",
         "category": "cricket",
         "price": 870
     },
     {
-        "_id": "9oiuytws987m",
+        "_id": "042c155b2c4774f05c36e355",
         "name": "Bat",
-        "description": "A cricket bat is a specialised piece of equipment used by batters in the sport of cricket.",
+        "description": "A cricket bat is a specialised piece.",
         "image": "https://i.ibb.co/hBCqHBd/willow-bat.jpg",
         "category": "offered",
         "price": 330
     },
     {
-        "_id": "9oiuytws987a",
+        "_id": "052c155b2c4774f05c36e333",
         "name": "Ball",
-        "description": "A cricket ball is a hard, solid ball used to play cricket. When a player ball it works well.",
+        "description": "A cricket ball is a hard, solid ball.",
         "image": "https://i.ibb.co/cwrSNQG/Aust.jpg",
         "category": "cricket",
         "price": 480
     },
     {
-        "_id": "9oiuytws987p",
+        "_id": "062c155b2c4774f05c36e322",
         "name": "Ball",
-        "description": "A cricket ball is a hard, solid ball used to play cricket. When a player ball it works well.",
+        "description": "A cricket ball is a hard, solid ball.",
         "image": "https://i.ibb.co/DQnjgPY/Tharax.jpg",
         "category": "cricket",
         "price": 630
     },
     {
-        "_id": "9oiuytws987x",
+        "_id": "072c155b2c4774f05c36e311",
         "name": "Ball",
-        "description": "A cricket ball is a hard, solid ball used to play cricket. you can buy it for play the cricket.",
+        "description": "A cricket ball is a hard, solid ball.",
         "image": "https://i.ibb.co/D8tSBDS/Kookabura.jpg",
         "category": "popular",
         "price": 850
     },
     {
-        "_id": "9oiuytws987Y",
+        "_id": "082c155b2c4774f05c36e229",
         "name": "Ball",
-        "description": "A cricket ball is a hard, solid ball used to play cricket. you can buy it for play the cricket.",
+        "description": "A cricket ball is a hard, solid ball.",
         "image": "https://i.ibb.co/SBS2Qfq/ball-promo.jpg",
         "category": "offered",
         "price": 240
     },
     {
-        "_id": "9oiuytws987L",
+        "_id": "092c155b2c4774f05c36e225",
         "name": "Pad",
-        "description": "Our cricket batting legguards are absolutely essential for a batsman's safety and protection.",
+        "description": "Our cricket batting legguards.",
         "image": "https://i.ibb.co/HKQD5Gw/DSC-Pad.jpg",
         "category": "cricket",
         "price": 720
     },
     {
-        "_id": "9oiuytws987Q",
+        "_id": "102c155b2c4774f05c36e224",
         "name": "Pad",
-        "description": "Our cricket batting legguards are absolutely essential for a batsman's safety and protection.",
+        "description": "Our cricket batting legguards.",
         "image": "https://i.ibb.co/0DxGnLZ/Blue-pad.jpg",
         "category": "cricket",
         "price": 520
     },
    
     {
-        "_id": "9oiuytws987I",
+        "_id": "112c155b2c4774f05c36e223",
         "name": "Helmet",
-        "description": "We have a complete range of Cricket Helmets for Men and for Boys.It protect the Batsman Head easily.",
+        "description": "We have a complete range of Cricket helmet.",
         "image": "https://i.ibb.co/xFcFGw0/SG-Helmet.jpg",
         "category": "cricket",
         "price": 965
     },
     {
-        "_id": "9oiuytws987N",
+        "_id": "122c155b2c4774f05c36e222",
         "name": "Helmet",
-        "description": "We have a complete range of Cricket Helmets for Men and for Boys.It protect the Batsman Head easily.",
+        "description": "We have a complete range of Cricket helmet.",
         "image": "https://i.ibb.co/sKnB80Z/Masuri-Helmet.jpg",
         "category": "cricket",
         "price": 860
     },
     {
-        "_id": "9oiuytws987T",
+        "_id": "132c155b2c4774f05c36e221",
         "name": "Helmet",
-        "description": "We have a complete range of Cricket Helmets for Men and for Boys. It is Protection.",
+        "description": "We have a complete range of Cricket helmet.",
         "image": "https://i.ibb.co/MSBtssG/Gray-Helmet.jpg",
         "category": "popular",
         "price": 940
     },
     {
-        "_id": "9oiuytws987V",
+        "_id": "142c155b2c4774f05c36e128",
         "name": "Football",
-        "description": "Football is a family of team sports that involve, to varying degrees, kicking a ball to score a goal.",
+        "description": "Football is a family of team sports.",
         "image": "https://i.ibb.co/tKDkd7M/Yellow.jpg",
         "category": "football",
         "price": 920
     },
     {
-        "_id": "9oiuytws987B",
+        "_id": "152c155b2c4774f05c36e126",
         "name": "Football",
-        "description": "Football is a family of team sports that involve, to varying degrees, kicking a ball to score a goal.",
+        "description": "Football is a family of team sports.",
         "image": "https://i.ibb.co/vZpBCzj/Football-Pallo.jpg",
         "category": "football",
         "price": 810
     },
     {
-        "_id": "9oiuytws987C",
+        "_id": "162c155b2c4774f05c36e125",
         "name": "Football",
-        "description": "Football is a family of team sports that involve, to varying degrees, kicking a ball to score a goal.",
+        "description": "Football is a family of team sports.",
         "image": "https://i.ibb.co/qyqvngb/ground-football.jpg",
         "category": "football",
         "price": 610
     },
     {
-        "_id": "9oiuytws9870",
+        "_id": "172c155b2c4774f05c36e124",
         "name": "Football",
-        "description": "Football is a family of team sports that involve, to varying degrees, kicking a ball to score a goal.",
+        "description": "Football is a family of team sports.",
         "image": "https://i.ibb.co/71T0y4H/solid-fottball.jpg",
         "category": "football",
         "price": 710
     },
     {
-        "_id": "9oiuytws987R",
+        "_id": "182c155b2c4774f05c36e123",
         "name": "Football",
-        "description": "Football is a family of team sports that involve, to varying degrees, kicking a ball to score goal.",
+        "description": "Football is a family of team sports.",
         "image": "https://i.ibb.co/bmTz9yW/mitre.jpg",
         "category": "popular",
         "price": 660
     },
     
     {
-        "_id": "9oiuytws989N",
+        "_id": "192c155b2c4774f05c36e027",
         "name": "Tennis_Bat",
-        "description": "Tennis, game in which two opposing players (singles) or pairs of players. You can Buy.",
+        "description": "Tennis, game in which two opposing players.",
         "image": "https://i.ibb.co/Zg76kv6/Tennis-Babolat-removebg-preview.png",
         "category": "popular",
         "price": 785
     },
     {
-        "_id": "9oiuytws989A",
+        "_id": "202c155b2c4774f05c36e025",
         "name": "Tennis_Bat",
-        "description": "Tennis, game in which two opposing players (singles) or pairs of players.",
+        "description": "Tennis, game in which two opposing players.",
         "image": "https://i.ibb.co/zQf9BpH/Tennis-Wilson.jpg",
         "category": "tennis",
         "price": 885
     },
     {
-        "_id": "9oiuytws989I",
+        "_id": "212c155b2c4774f05c36e024",
         "name": "Tennis_Bat",
-        "description": "Tennis, game in which two opposing players (singles) or pairs of players. Great bat",
+        "description": "Tennis, game in which two opposing players.",
         "image": "https://i.ibb.co/P98vZpn/Tennis-Racket.jpg",
         "category": "tennis",
         "price": 765
     },
 
     {
-        "_id": "9oiuytws989W",
+        "_id": "222c155b2c4774f05c36e023",
         "name": "Tennis_Bat",
-        "description": "Tennis, game in which two opposing players (singles) or pairs of players. Great bat",
+        "description": "Tennis, game in which two opposing players.",
         "image": "https://i.ibb.co/QJ7Jgjz/raccket-stock.jpg",
         "category": "offered",
         "price": 420
     },
     {
-        "_id": "9oiuytws989V",
+        "_id": "232c155b2c4774f05c36e022",
         "name": "Tennis_Ball",
-        "description": "Tennis, game in which two opposing players (singles) or pairs of players.",
+        "description": "Tennis, game in which two opposing players.",
         "image": "https://i.ibb.co/B6PXNMC/Tennis-green.jpg",
         "category": "tennis",
         "price": 460
     },
     {
-        "_id": "9oiuytws989Ne",
+        "_id": "242c155b2c4774f05c36e021",
         "name": "Tennis_Ball",
-        "description": "Tennis, game in which two opposing players (singles) or pairs of players.",
+        "description": "Tennis, game in which two opposing players.",
         "image": "https://i.ibb.co/Ht8Spk2/Orange.jpg",
         "category": "tennis",
         "price": 260
     },
     
     {
-        "_id": "9oiuytws989o",
+        "_id": "252c155b2c4774f05c36e746",
         "name": "Volleyball",
-        "description": "Volleyball is a team sport in which two teams of six players are separated by a net.",
+        "description": "Volleyball is a team sport.",
         "image": "https://i.ibb.co/rtQvt9j/wilson.jpg",
         "category": "volleyball",
         "price": 810
     },
     {
-        "_id": "9oiuytws989m",
+        "_id": "262c155b2c4774f05c36e980",
         "name": "Volleyball",
-        "description": "Volleyball is a team sport in which two teams of six players are separated by a net.",
+        "description": "Volleyball is a team sport.",
         "image": "https://i.ibb.co/L5zQT5z/softplay.jpg",
         "category": "volleyball",
         "price": 400
     },
     {
-        "_id": "9oiuytws989l",
+        "_id": "272c155b2c4774f05c36e018",
         "name": "Volleyball",
-        "description": "Volleyball is a team sport in which two teams of six players are separated by a net.",
+        "description": "Volleyball is a team sport.",
         "image": "https://i.ibb.co/wYcprzh/nike.webp",
         "category": "volleyball",
         "price": 530
     },
     {
-        "_id": "9oiuytws989k",
+        "_id": "282c155b2c4774f05c36e741",
         "name": "Volleyball",
-        "description": "Volleyball is a team sport in which two teams of six players are separated by a net.",
+        "description": "Volleyball is a team sport.",
         "image": "https://i.ibb.co/Gk72jpm/copaya.jpg",
         "category": "volleyball",
         "price": 360
     },
     {
-        "_id": "9oiuytws989d",
+        "_id": "292c155b2c4774f05c36e983",
         "name": "Volleyball",
-        "description": "Volleyball is a team sport in which two teams of six players are separated by a net. Nice play.",
+        "description": "Volleyball is a team sport.",
         "image": "https://i.ibb.co/RSCCgVF/dve.png",
         "category": "popular",
         "price": 700
     },   
     {
-        "_id": "9oiuytws9896",
+        "_id": "302c155b2c4774f05c36e987",
         "name": "Volleyball",
-        "description": "Volleyball is a team sport in which two teams of six players are separated by a net. Nice play.",
+        "description": "Volleyball is a team sport.",
         "image": "https://i.ibb.co/LrZztc0/Volley-indoor.jpg",
         "category": "offered",
         "price": 320
