@@ -33,7 +33,7 @@ const UpdateItem = () => {
                 name: data.name,
                 category: data.category,
                 price: parseFloat(data.price),
-                recipe: data.recipe,
+                description: data.description,
                 image: res.data.data.display_url
             }
             // 
@@ -56,7 +56,7 @@ const UpdateItem = () => {
 
     return (
         <div>
-              <SectionTitle heading="Update an Item" subHeading="Refresh info"></SectionTitle>
+              <SectionTitle heading="Update an Item" subHeading="Update info"></SectionTitle>
 
               <div>
            <form onSubmit={handleSubmit(onSubmit)}>
