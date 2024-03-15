@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import useAuth from '../../../hooks/useAuth'
 import useAxiosSecure from '../../../hooks/useAxiosSecure';
-import { FaBook, FaDollarSign, FaUsers } from 'react-icons/fa';
+import { FaBook, FaUsers } from 'react-icons/fa';
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, PieChart, Pie, Legend } from 'recharts';
 
 const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
@@ -61,7 +61,7 @@ const AdminHome = () => {
 
     return (
         <div>
-            <h2 className=" text-xl lg:text-3xl">
+            <h2 className=" text-xl lg:text-3xl mb-8">
                 <span>Hi, Welcome </span>
                 {
                     user?.displayName ? user.displayName : 'Back'
@@ -71,39 +71,39 @@ const AdminHome = () => {
 
                 <div className="stat w-1/2">
                     <div className="stat-figure text-secondary">
-                        <FaDollarSign className='text-3xl'></FaDollarSign>
+                        <h1 className='text-3xl font-bold mt-14 ml-6'>BDT</h1>
                     </div>
-                    <div className="stat-title">Revenue</div>
-                    <div className="stat-value">${stats.revenue}</div>
-                    <div className="stat-desc">Jan 1st - Feb 1st</div>
+                    <div className="stat-title text-2xl ">Revenue</div>
+                    <div className="stat-value mt-6">{stats.revenue}</div>
+                    
                 </div>
 
                 <div className="stat">
                     <div className="stat-figure text-secondary">
-                        <FaUsers className='text-3xl'></FaUsers>
+                        <FaUsers className='text-3xl mt-14 ml-6'></FaUsers>
                     </div>
-                    <div className="stat-title">Users</div>
-                    <div className="stat-value">{stats.users}</div>
-                    <div className="stat-desc">↗︎ 400 (22%)</div>
+                    <div className="stat-title text-2xl">Users</div>
+                    <div className="stat-value mt-6">{stats.users}</div>
+                   
                 </div>
 
 
                 <div className="stat">
                     <div className="stat-figure text-secondary">
-                        <FaBook className='text-3xl'></FaBook>
+                        <FaBook className='text-3xl mt-14 ml-6'></FaBook>
                     </div>
-                    <div className="stat-title"> Items</div>
-                    <div className="stat-value">{stats.menuItems}</div>
-                    <div className="stat-desc">↗︎ 400 (22%)</div>
+                    <div className="stat-title text-2xl"> Items</div>
+                    <div className="stat-value mt-6">{stats.items}</div>
+                   
                 </div>
 
                 <div className="stat">
                     <div className="stat-figure text-secondary">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-8 h-8 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-8 h-8 stroke-current mt-14 ml-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
                     </div>
-                    <div className="stat-title">Orders</div>
-                    <div className="stat-value">{stats.orders}</div>
-                    <div className="stat-desc">↘︎ 90 (14%)</div>
+                    <div className="stat-title text-2xl">Orders</div>
+                    <div className="stat-value mt-6">{stats.orders}</div>
+                   
                 </div>
 
             </div>
