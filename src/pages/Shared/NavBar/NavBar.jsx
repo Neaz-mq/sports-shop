@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../../providers/AuthProvider";
 import { FaShoppingCart } from 'react-icons/fa';
 import useCart from "../../../hooks/useCart";
@@ -10,6 +10,20 @@ const NavBar = () => {
     const {user, logOut} = useContext(AuthContext);
     const [isAdmin] = useAdmin();
     const [cart] = useCart();
+    const [theme, setTheme] = useState(() => localStorage.getItem("theme") || "light"); // Default theme is light
+
+
+    const handleToggle = () => {
+        const newTheme = theme === "light" ? "dark" : "light";
+        setTheme(newTheme);
+        localStorage.setItem("theme", newTheme);
+        document.documentElement.setAttribute("data-theme", newTheme);
+    };
+
+    useEffect(() => {
+        const localTheme = localStorage.getItem("theme");
+        document.documentElement.setAttribute("data-theme", localTheme || "light");
+    }, []);
 
     const handleLogOut = () => {
         logOut()
@@ -96,8 +110,13 @@ const NavBar = () => {
                         {navOptions}
                     </ul>
                 </div>
-                
+              {/* Theme toggle */}
+              <div className="lg:pr-8 lg:-ml-8">
+                    <input type="checkbox" onChange={handleToggle} className="toggle toggle-info" checked={theme === "dark"} />
+                </div>
             </div>
+
+           
         </>
     );
 };
