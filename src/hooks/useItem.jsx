@@ -7,7 +7,7 @@ const useItem = () => {
     // const [item, setItem] = useState([]);
     // const [loading, setLoading] = useState(true);
     // useEffect( () => {
-    //     fetch ('http://localhost:5000/item')
+    //     fetch ('https://sports-shop-server.vercel.app/item')
     //     .then(res => res.json())
     //     .then(data => {
     //         setItem(data)
