@@ -85,7 +85,7 @@ const NavBar = () => {
 
     return (
         <>
-            <div className="navbar fixed  bg-opacity-30  z-10   bg-gray-400 text-black -mt-2 lg:mt-0">
+            <div className="navbar lg:fixed  bg-opacity-30  z-10   bg-gray-400 text-black -mt-2 lg:mt-0">
                 <div className="navbar-start">
            
             <div className={`dropdown from-neutral-50 -mt-4 z-12 ml-56 -mr-56 ${isDropdownOpen ? 'open' : ''}`} onClick={toggleDropdown}>
@@ -103,7 +103,7 @@ const NavBar = () => {
               )}
          
             </div>
-                    <a href="/" className="-mt-2 ml-16 -mr-20 lg:ml-0 lg:mr-0 md:ml-64 "><img src="https://i.ibb.co/JyJhGTj/150x80.png" alt="" /></a>
+                    <a href="/" className="lg:-mt-2 ml-16 -mr-20 lg:ml-0 lg:mr-0 md:ml-64 "><img src="https://i.ibb.co/JyJhGTj/150x80.png" alt="" /></a>
                 </div>
                 <div className="navbar-center  hidden lg:flex  mt-4 mr-32 ">
                     <ul className="menu menu-horizontal  px-1 text-lg ">
@@ -111,7 +111,7 @@ const NavBar = () => {
                     </ul>
                 </div>
               {/* Theme toggle */}
-              <div className="lg:pr-8 lg:-ml-8">
+              <div className="lg:pr-8 lg:-ml-8 -ml-48 ">
                     <input type="checkbox" onChange={handleToggle} className="toggle toggle-info" checked={theme === "dark"} />
                 </div>
             </div>

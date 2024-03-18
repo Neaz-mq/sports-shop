@@ -12,7 +12,8 @@ const Featured = () => {
             
             ></SectionTitle>
 
-           <div className="md:flex justify-center items-center pb-20 pt-12 px-36">
+           <div className="md:flex justify-center items-center pb-20 pt-12 px-36" data-aos="fade-up"
+     data-aos-anchor-placement="top-center"  data-aos-duration="1500">
            <div>
                 <img className="w-screen " src={featuredimg} alt="" />
             </div>

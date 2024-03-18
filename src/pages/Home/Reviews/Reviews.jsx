@@ -23,7 +23,7 @@ const Reviews = () => {
                 heading={"Reviews"}
 
             ></SectionTitle>
-            <Swiper navigation={true} modules={[Navigation]} className="reviewsSwiper">
+            <Swiper navigation={true} modules={[Navigation]} className="reviewsSwiper"  data-aos="zoom-in" data-aos-duration="1500">
 
                 {
                     reviews.map(review => <SwiperSlide

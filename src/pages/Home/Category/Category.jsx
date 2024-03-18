@@ -25,11 +25,14 @@ const Category = () => {
           heading={"Order Online"}
           
           ></SectionTitle>
-        <Swiper
+     
+    
+     <Swiper
             effect={'cards'}
             grabCursor={true}
             modules={[EffectCards]}
-            className="mySwiper"
+            className="mySwiper"  data-aos="fade-down" data-aos-easing="linear"
+            data-aos-duration="1500"
         >
             <SwiperSlide>
                 <img src={slide1} alt="" />
@@ -59,6 +62,7 @@ const Category = () => {
             </SwiperSlide>
             
         </Swiper>
+    
         </section>
         </div>
     );
